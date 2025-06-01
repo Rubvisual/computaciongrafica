@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  color: #ffffff;
+}
+p {
+  color: #ffffff;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(2, 255, 90, 0.1);
+}
+
+.logo img {
+  width: 120px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #0077cc;
+}
+
+.historia-section {
+  background-image: url('img/1.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 150px;
+}
+
+.historia-texto {
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.historia-texto h2 {
+  font-size: 60px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.historia-texto p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .historia-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .historia-img img {
+    max-width: 100%;
+  }
+}
+
+.ubicacion-section {
+  background-color: #f0f0f0;
+  padding: 80px 20px;
+}
+
+.ubicacion-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ubicacion-content h2 {
+  font-size: 40px;
+  margin-bottom: 32px;
+  color: #333;
+}
+
+.mapa-contenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gastronomia-section {
+  background-image: url('IMG/4.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.gastronomia-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.gastronomia-texto {
+  flex: 1 1 40%;
+}
+
+.gastronomia-texto h2 {
+  font-size: 40px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.gastronomia-texto p {
+  font-size: 17.6px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.gastronomia-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px; 
+  padding-top: 20px;
+}
+
+.gastronomia-logos img {
+  flex: 1 1 calc(100% / 9 - 8px); 
+  max-width: calc(100% / 9 - 8px);
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gastronomia-content {
+    flex-direction: column;
+  }
+
+  .gastronomia-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gastronomia-logos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Íconos flotantes */
+
+
+.iconos-flotantes {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1001;
+}
+
+.iconos-flotantes i {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s;
+}
+
+.iconos-flotantes a{
+    text-decoration: none;
+}
+.iconos-flotantes i:hover {
+  transform: scale(1.2);
+  background-color: #eee;
+}
+
+.footer {
+  background-color: #2e2e2e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px 60px;
+}
+
+.footer-left {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+
+.footer-section a {
+  color: white;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
