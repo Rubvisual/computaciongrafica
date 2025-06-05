@@ -15,6 +15,7 @@ p {
   color: #ffffff;
 }
 
+/* Nav */
 .navbar {
   position: sticky;
   top: 0;
@@ -46,6 +47,8 @@ p {
   color: #0077cc;
 }
 
+/* Historia */
+
 .historia-section {
   background-image: url('IMG/1.jpeg');
   background-attachment: fixed;
@@ -73,18 +76,7 @@ p {
   line-height: 1.6;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .historia-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .historia-img img {
-    max-width: 100%;
-  }
-}
-
+/* Ubincacion */
 .ubicacion-section {
   background-color: #f0f0f0;
   padding: 80px 20px;
@@ -110,6 +102,8 @@ p {
   border-radius: 8px;
   overflow: hidden;
 }
+
+/* Gastronomia */
 
 .gastronomia-section {
   background-image: url('IMG/4.jpg');
@@ -163,22 +157,8 @@ p {
   box-sizing: border-box;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .gastronomia-content {
-    flex-direction: column;
-  }
 
-  .gastronomia-logos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .gastronomia-logos {
-    grid-template-columns: 1fr;
-  }
-}
+/* Nosotros */
 
 .nosotros-title {
    width: 100%;
@@ -287,6 +267,7 @@ p {
   padding: 40px 60px;
 }
 
+/* Footer */
 .footer-left {
   display: flex;
   gap: 60px;
