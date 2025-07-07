@@ -270,7 +270,7 @@ p {
   background-color: #eee;
 }
 
-.footer {
+footer {
   background-color: #2e2e2e;
   color: white;
   display: flex;
@@ -367,7 +367,7 @@ p {
     align-items: center;
   }
 
-  .footer {
+  footer {
     flex-direction: column;
     gap: 40px;
     padding: 30px 20px;
@@ -412,7 +412,7 @@ p {
     max-width: 100%;
   }
 
-  .footer {
+  footer {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
@@ -449,7 +449,7 @@ p {
     max-width: calc(100% / 9 - 8px);
   }
 
-  .footer {
+  footer {
     padding: 40px 60px;
   }
 }
